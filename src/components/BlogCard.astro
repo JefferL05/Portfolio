@@ -1,0 +1,40 @@
+---
+import type { BlogPost } from '../lib/blog';
+import { formatBlogDate } from '../lib/blog';
+
+interface Props {
+  post: BlogPost;
+}
+
+const { post } = Astro.props;
+---
+
+<article class="card group flex flex-col h-full">
+  <div class="flex items-center gap-2 mb-3">
+    {post.categories.slice(0, 2).map((cat) => (
+      <span class="badge">{cat}</span>
+    ))}
+  </div>
+
+  <h3 class="text-lg font-semibold text-white group-hover:text-accent transition-colors mb-2 flex-1">
+    <a href={post.link} target="_blank" rel="noopener noreferrer">
+      {post.title}
+    </a>
+  </h3>
+
+  {post.description && (
+    <p class="text-slate-400 text-sm mb-4 line-clamp-3">{post.description}</p>
+  )}
+
+  <div class="flex items-center justify-between mt-auto pt-3 border-t border-surface-600/50">
+    <time class="text-xs text-slate-500">{formatBlogDate(post.pubDate)}</time>
+    <a
+      href={post.link}
+      target="_blank"
+      rel="noopener noreferrer"
+      class="text-xs text-accent hover:text-accent-dim transition-colors font-medium"
+    >
+      Ler mais →
+    </a>
+  </div>
+</article>
