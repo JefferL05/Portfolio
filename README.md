@@ -1,31 +1,31 @@
 # Portfolio do Jeff
 
-Portfólio pessoal que agrega projetos do GitHub e posts do blog **Console do Jeff** em um único lugar.
+PortfÃ³lio pessoal que agrega projetos do GitHub e posts do blog **Console do Jeff** em um Ãºnico lugar.
 
 ## Stack
 
-- **Astro** — Framework estático com ILR (Islands Architecture)
-- **Tailwind CSS** — Estilização utilitária
-- **TypeScript** — Tipagem estática
+- **Astro** â Framework estÃ¡tico com ILR (Islands Architecture)
+- **Tailwind CSS** â EstilizaÃ§Ã£o utilitÃ¡ria
+- **TypeScript** â Tipagem estÃ¡tica
 
 ## Funcionalidades
 
-- **Hero** com informações do perfil GitHub (nome, bio, localização, stats)
-- **Projetos** — Cards com os repositórios mais recentes do GitHub (stars, forks, linguagem, última atualização)
-- **Blog** — Posts recentes do blog via RSS
-- **Sobre** — Seção estilizada como terminal
-- **CTA** — Links para GitHub e Instagram
+- **Hero** com informaÃ§Ãµes do perfil GitHub (nome, bio, localizaÃ§Ã£o, stats)
+- **Projetos** â Cards com os repositÃ³rios mais recentes do GitHub (stars, forks, linguagem, Ãºltima atualizaÃ§Ã£o)
+- **Blog** â Posts recentes do blog via RSS
+- **Sobre** â SeÃ§Ã£o estilizada como terminal
+- **CTA** â Links para GitHub e Instagram
 
 ## Como rodar localmente
 
 ```bash
-# Instalar dependências
+# Instalar dependÃªncias
 npm install
 
 # Servidor de desenvolvimento
 npm run dev
 
-# Build de produção
+# Build de produÃ§Ã£o
 npm run build
 
 # Preview do build
@@ -35,31 +35,31 @@ npm run preview
 ## Estrutura
 
 ```
-├── astro.config.mjs
-├── package.json
-├── tailwind.config.js
-├── tsconfig.json
-├── public/
-│   └── favicon.svg
-└── src/
-    ├── components/
-    │   ├── Hero.astro
-    │   ├── ProjectCard.astro
-    │   └── BlogCard.astro
-    ├── layouts/
-    │   └── BaseLayout.astro
-    ├── lib/
-    │   ├── github.ts
-    │   └── blog.ts
-    ├── pages/
-    │   └── index.astro
-    └── styles/
-        └── global.css
+âââ astro.config.mjs
+âââ package.json
+âââ tailwind.config.js
+âââ tsconfig.json
+âââ public/
+â   âââ favicon.svg
+âââ src/
+    âââ components/
+    â   âââ Hero.astro
+    â   âââ ProjectCard.astro
+    â   âââ BlogCard.astro
+    âââ layouts/
+    â   âââ BaseLayout.astro
+    âââ lib/
+    â   âââ github.ts
+    â   âââ blog.ts
+    âââ pages/
+    â   âââ index.astro
+    âââ styles/
+        âââ global.css
 ```
 
 ## Deploy
 
-O projeto está pronto para deploy no **GitHub Pages** ou **Vercel/Netlify**. Como Astro gera site estático, basta fazer build e publicar a pasta `dist/`.
+O projeto estÃ¡ pronto para deploy no **GitHub Pages** ou **Vercel/Netlify**. Como Astro gera site estÃ¡tico, basta fazer build e publicar a pasta `dist/`.
 
 ## Fontes de dados
 

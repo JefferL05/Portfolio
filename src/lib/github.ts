@@ -71,13 +71,13 @@ export function timeAgo(dateStr: string): string {
 
   if (seconds < 60) return 'agora mesmo';
   const minutes = Math.floor(seconds / 60);
-  if (minutes < 60) return `há ${minutes} min`;
+  if (minutes < 60) return `hÃ¡ ${minutes} min`;
   const hours = Math.floor(minutes / 60);
-  if (hours < 24) return `há ${hours}h`;
+  if (hours < 24) return `hÃ¡ ${hours}h`;
   const days = Math.floor(hours / 24);
-  if (days < 30) return `há ${days} dias`;
+  if (days < 30) return `hÃ¡ ${days} dias`;
   const months = Math.floor(days / 30);
-  if (months < 12) return `há ${months} ${months === 1 ? 'mês' : 'meses'}`;
+  if (months < 12) return `hÃ¡ ${months} ${months === 1 ? 'mÃªs' : 'meses'}`;
   const years = Math.floor(months / 12);
-  return `há ${years} ${years === 1 ? 'ano' : 'anos'}`;
+  return `hÃ¡ ${years} ${years === 1 ? 'ano' : 'anos'}`;
 }
